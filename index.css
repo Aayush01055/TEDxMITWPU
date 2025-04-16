@@ -2094,3 +2094,9 @@
       margin-left: 100%;
     }
   }
+  @media screen and (max-width: 431px) {
+    .hero-logo{
+      margin-left: 25%;
+    }
+  }
+  
