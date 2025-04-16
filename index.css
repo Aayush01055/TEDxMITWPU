@@ -395,7 +395,7 @@
     margin: 0;
     padding: 20px;
     /* add some padding for smaller screens */
-    background-image: url(images/group.svg);
+    background-image: url(https://cdn.jsdelivr.net/gh/Aayush01055/TEDxMITWPU-Assests/images/group.svg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: right center;
