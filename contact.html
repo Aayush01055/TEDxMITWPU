@@ -1,0 +1,1008 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>TEDx MITWPU</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- <link rel="stylesheet" href="aboutus.css" /> -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <style>
+      body {
+        width: 100%;
+        font-family: "Roboto", sans-serif;
+        color: #ffffff;
+        margin: 0;
+        padding: 0;
+        background-color: #1a1a1a;
+        /* background-image: url("images/contact.svg"); */
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        background-attachment: fixed;
+        min-height: 100vh;
+        overflow-x: hidden;
+      }
+
+      h1 {
+        text-align: center;
+        margin-top: 100px;
+        font-size: 2.5em;
+      }
+
+      .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+        /* spacing between iframe and each box */
+        margin-top: 40px;
+        margin-bottom: 60px;
+      }
+
+      iframe {
+        border: 0;
+        width: 80%;
+        max-width: 1200px;
+        height: 400px;
+      }
+
+      .translucent-box {
+        background-color: rgba(255, 255, 255, 0.1);
+        padding: 25px;
+        width: 80%;
+        max-width: 1200px;
+        border-radius: 10px;
+        color: white;
+        box-sizing: border-box;
+        line-height: 1.8em;
+        /* adds vertical spacing */
+        font-size: 1.1em;
+      }
+
+      .form-box {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+      }
+
+      .form-row {
+        display: flex;
+        gap: 10px;
+      }
+
+      .form-row input {
+        margin-top: 7px;
+        flex: 1;
+      }
+
+      .form-row > div {
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+      }
+
+      .form-row {
+        display: flex;
+        gap: 20px;
+      }
+
+      .form-group {
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+      }
+
+      .form-box input,
+      .form-box textarea {
+        background-color: transparent;
+        border: 1px solid white;
+        color: white;
+        padding: 10px;
+        font-size: 1em;
+        border-radius: 5px;
+        box-sizing: border-box;
+      }
+
+      .form-box input::placeholder,
+      .form-box textarea::placeholder {
+        color: rgba(255, 255, 255, 0.6);
+      }
+      .nav-link.active {
+        color: red;
+        font-weight: bold;
+        border-bottom: 2px solid red; /* Optional underline */
+      }
+      .nav-links li a:hover {
+        color: #ff2b06;
+      }
+      @media screen and (max-width: 768px) {
+        .container {
+          padding: 0 10px;
+        }
+
+        iframe {
+          width: 100%;
+          height: 300px;
+        }
+
+        .translucent-box {
+          width: 100%;
+          padding: 20px;
+        }
+
+        .form-row {
+          flex-direction: column;
+          gap: 10px;
+        }
+
+        .form-box input,
+        .form-box textarea {
+          font-size: 1em;
+        }
+      }
+      footer {
+        margin: 0px;
+        padding: 2px;
+        display: flex;
+        justify-content:space-between;
+        width: 87%;
+        background: #1a1a1a;
+        color: #fff;
+        padding: 15px 0;
+        font-size: 16px;
+        text-align: center;
+        
+      }
+
+      .team-crew {
+        margin-bottom: 80px;
+      }
+
+      .footer-container {
+        width: 80%;
+        margin: 0px;
+        padding: 6px;
+      }
+
+      .footer-row {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-wrap: wrap;
+      }
+
+      .footer-col {
+        flex: flex;
+        min-width: 200px;
+        padding: 10px;
+        box-sizing: border-box;
+      }
+
+      .logo-col {
+        text-align: left;
+      }
+
+      .footer-logo {
+        width: 150px;
+        height: auto;
+        margin-bottom: 8px;
+      }
+
+      .footer-desc {
+        font-size: 13px;
+        color: #bbb;
+        max-width: 250px;
+      }
+
+      .links-col {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .footer-links {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-direction: row;
+        gap: 25px;
+        flex-wrap: nowrap;
+        margin-left: 300px;
+      }
+
+      .footer-links li {
+        display: inline-block;
+        white-space: nowrap;
+      }
+
+      .footer-links a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 17px;
+        font-weight: 600;
+        transition: color 0.3s ease;
+        white-space: nowrap;
+      }
+
+      .footer-links a:hover {
+        color: #f44336;
+      }
+
+      .instagram-col {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 4px;
+      }
+
+      .instagram-text {
+        font-size: 16px;
+        color: #fff;
+        margin-bottom: 10px;
+      }
+
+      .instagram-icons {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .instagram-link {
+        text-decoration: none;
+        display: inline-block;
+        color: #fff;
+      }
+
+      .instagram-logo {
+        width: 24px;
+        height: 24px;
+        margin-top: 5px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .instagram-link:hover .instagram-logo {
+        transform: scale(1.1);
+      }
+      @media (max-width: 768px) {
+        .logo-col,
+        .instagram-col {
+          position: relative;
+          left: 45px;
+        }
+
+        .footer-links {
+          display: grid;
+          grid-template-columns: repeat(2, 1fr); /* 2 columns on mobile */
+          gap: 10px; /* Spacing between grid items */
+          justify-items: start; /* Align links to the left */
+          justify-content: start; /* Align grid to the left */
+        }
+
+        .footer-links li {
+          text-align: left; /* Align text to the left */
+        }
+
+        .footer-links a {
+          font-size: 14px; /* Adjust font size for smaller screens */
+        }
+      }
+      
+@media screen and (max-width: 768px) {
+    .about-heading {
+        font-size: 2.5rem;
+        margin-top: 80px;
+    }
+    
+    .intro-info {
+        padding: 2rem;
+    }
+    
+    .intro-name {
+        font-size: 1.5rem;
+    }
+    
+    /* Navbar responsive */
+    header {
+        padding: 15px 20px;
+    }
+    
+    .nav-links {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        flex-direction: column;
+        background: #121212;
+        padding: 20px 0;
+    }
+    
+    .nav-links li {
+        margin: 10px 0;
+        text-align: center;
+    }
+  }
+
+
+      /* Header/Navbar Styles */
+      header {
+        width: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        padding: 15px 50px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background: #1a1a1a;
+        z-index: 1000;
+      }
+
+      nav {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .nav-left {
+        display: flex;
+        align-items: center;
+        height: 100%;
+      }
+
+      .logo {
+        width: 180px;
+        height: 60px;
+      }
+
+      .nav-links {
+        list-style: none;
+        display: flex;
+      }
+      .nav-links li {
+        margin-left: 20px;
+      }
+
+      .nav-links li a {
+        color: white;
+        text-decoration: none;
+        font-size: 18px;
+      }
+      .nav-links li a:hover {
+        color: #ff2b06;
+      }
+      .nav-link.active {
+        color: red;
+        font-weight: bold;
+        border-bottom: 2px solid red; /* Optional underline */
+      }
+
+      .menu-btn {
+        display: none;
+        font-size: 1.5rem;
+        cursor: pointer;
+        color: white;
+        z-index: 1100;
+      }
+
+      @media (max-width: 768px) {
+        header {
+          padding: 15px 20px;
+        }
+        
+        .menu-btn {
+          display: block;
+        }
+
+        .nav-links {
+          display: none;
+          flex-direction: column;
+          position: absolute;
+          top: 80px;
+          left: 0;
+          background: rgba(0, 0, 0, 0.9);
+          width: 100%;
+          padding: 10px;
+          align-items: center;
+        }
+
+        .nav-links.active {
+          display: flex;
+        }
+
+        .nav-links li {
+          margin: 10px 0;
+        }
+      }
+      
+    @media screen and (max-width: 768px) {
+      header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #121212;
+        padding: 10px 20px;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 1000;
+      }
+
+      .nav-left {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        justify-content: space-between;
+        /* Makes logo on left, button on right */
+      }
+
+      .menu-btn {
+        display: block;
+        font-size: 28px;
+        color: white;
+        cursor: pointer;
+      }
+
+      .nav-links {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        background-color: #121212;
+        padding-bottom: 20px;
+      }
+
+      .nav-links.active {
+        display: flex;
+      }
+
+      .nav-links li {
+        margin: 10px 0;
+      }
+
+      .nav-links li a {
+        color: white;
+        padding: 10px 0;
+        text-decoration: none;
+        position: relative;
+      }
+
+      .nav-links li a.active::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        background-color: red;
+        /* underline color */
+      }
+    }
+
+    @media screen and (max-width: 768px) {
+      header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #121212;
+        padding: 10px 20px;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 1000;
+      }
+
+      .nav-left {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        justify-content: space-between;
+        /* Makes logo on left, button on right */
+      }
+
+      .menu-btn {
+        display: block;
+        font-size: 28px;
+        color: white;
+        cursor: pointer;
+      }
+
+      .nav-links {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        background-color: #1a1a1a;
+        padding-bottom: 20px;
+      }
+
+      .nav-links.active {
+        display: flex;
+      }
+
+      .nav-links li {
+        margin: 10px 0;
+      }
+
+      .nav-links li a {
+        color: white;
+        padding: 10px 0;
+        text-decoration: none;
+        position: relative;
+      }
+
+      .nav-links li a.active::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        background-color: red;
+        /* underline color */
+      }
+
+
+      .logo-col {
+        text-align: center;
+      }
+
+
+      .links-col {
+        order: 3;
+      }
+
+
+      .team-crew {
+        margin-bottom: 80px;
+      }
+
+
+      .logo-col {
+        text-align: left;
+      }
+
+
+      .links-col {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .logo-col {
+        position: relative;
+        left: 50px;
+      }
+      .footer-links a{
+        position: relative;
+        right: 220px;
+      }
+      .footer-links{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        
+      }
+      .logo-col img{
+        position: relative;
+        left: 50px;
+      }
+      .footer-desc{
+        position: relative;
+        left: 10px;
+      }
+
+    }
+    footer{
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+    }
+    .footer-links{
+        position: relative;
+        right: -50%;
+    }
+    @media screen and (max-width: 768px) {
+      header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #121212;
+        padding: 10px 20px;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 1000;
+      }
+
+      .nav-left {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        justify-content: space-between;
+        /* Makes logo on left, button on right */
+      }
+
+      .menu-btn {
+        display: block;
+        font-size: 28px;
+        color: white;
+        cursor: pointer;
+      }
+
+      .nav-links {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        background-color: #1a1a1a;
+        padding-bottom: 20px;
+      }
+
+      .nav-links.active {
+        display: flex;
+      }
+
+      .nav-links li {
+        margin: 10px 0;
+      }
+
+      .nav-links li a {
+        color: white;
+        padding: 10px 0;
+        text-decoration: none;
+        position: relative;
+      }
+
+      .nav-links li a.active::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        background-color: red;
+        /* underline color */
+      }
+
+
+      .logo-col {
+        text-align: center;
+      }
+
+
+      .links-col {
+        order: 3;
+      }
+
+
+      .team-crew {
+        margin-bottom: 80px;
+      }
+
+
+      .logo-col {
+        text-align: left;
+      }
+      .footer-links{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        position: relative;
+        left: 40%;
+        
+      }
+
+      /* .links-col {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+      }*/
+      .footer-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+      .footer-row{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+      }
+      .instagram-iconS{
+       margin-right: 5000px;
+      }
+      
+
+      
+      body{
+        width: 100%;
+      }
+      header{
+        width: 95%;
+      }
+      footer{
+        width: 175%;
+      }
+
+      .container{
+        margin-left: 58px;
+        
+        width: 125%;
+      }
+      h1{
+       position: relative;
+       left: 40%;
+      }
+      
+      
+    }
+    .nav-links{
+      margin-right: 60px;
+    }
+    .instagram-col{
+      
+      position: relative;
+      top: -25px;
+      left: 10%;
+    }
+    .footer-links{
+      margin-right: 400px;
+    }
+    .footer-links{
+      position: relative;
+      right: -25%;
+    }
+    .footer-links{
+      margin-right: 50px;
+    }
+    @media (min-width:769px) {
+      .footer-logo img{
+        margin-left: -3rem !important;
+      } }
+      @media  screen and (max-width: 768px) {
+        .instagram-col{
+          position: relative;
+          top: -10px;
+          left: 43px;
+        }
+        .footer-links{
+          margin-right:20%;
+        }
+       
+        .container{
+          width: 80vw;
+          padding: 0;
+          margin-left: 38px;
+         
+        }
+        /* .logo{
+        width:100%;
+      } */
+      body{
+        width: 100%;
+        overflow-x: hidden;
+       }
+       header{
+        width: 90vw;
+       }
+        h1{
+          position: relative;
+          left: 0%;
+        }
+        .footer-links{
+          position: relative;
+          left: 0%;
+        }
+        .logo-col{
+          position: relative;
+          left: -25%;
+        }
+        .instagram-col{
+          position: relative;
+          left: -26%;
+        }
+        .copyright{
+          position: relative;
+          left: -20%;
+        }
+        .container{
+          max-width: 100%;
+        }
+        html, body {
+  width: 100%;
+  overflow-x: hidden;
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+/* Remove conflicting widths */
+footer, header, .container {
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+}
+.footer-container{
+  position: relative;
+  left:25%;
+}
+.copyright{
+  margin-left: 12%;
+}
+
+      }
+      @media screen and (max-width: 376px) {
+        footer{
+          position: relative;
+          left: 12%;
+        }
+        .copyright{
+          position: relative;
+          left: -25%;
+        }
+        .footer-links{
+          position: relative;
+          left: 2%;
+        }
+    }
+      
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <div class="nav-left">
+          <a href="index.html" class="logo-link">
+            <img
+              src="images/tedxlogowhite.png"
+              alt="TEDxMITWPU Logo"
+              class="logo"
+            />
+          </a>
+        </div>
+        <ul class="nav-links">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="aboutus.html" class="nav-link">About Us</a></li>
+          <li><a href="team.html" class="nav-link">Team</a></li>
+          <li><a href="pastevent.html" class="nav-link">Past Events</a></li>
+          <li><a href="contact.html" class="nav-link">Contact Us</a></li>
+          <li><a href="guidelines.html" class="nav-link">Guidelines</a></li>
+          <li><a href="brochure.pdf" class="nav-link">Brochure</a></li>
+        </ul>
+        <div class="menu-btn">☰</div>
+      </nav>
+    </header>
+    <h1>Contact Us</h1>
+
+    <div class="container">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3783.2465831890463!2d73.81511119999999!3d18.5177559!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2bfb9e53a05f9%3A0x2be5e8da02be693e!2sMIT%20World%20Peace%20University%20(MIT-WPU)!5e0!3m2!1sen!2sin!4v1743435254352!5m2!1sen!2sin"
+        allowfullscreen
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        title="MIT-WPU Location Map"
+      >
+      </iframe>
+
+      <div class="translucent-box">
+        <p>For further enquiries, Contact - Mr. XYZ / Ms. XYZ</p>
+        <p>MITWPU, Kothrud, Pune, 411015</p>
+        <p>0000000000</p>
+        <p>tedx@mitwpu.edu.in</p>
+      </div>
+
+      <div class="translucent-box">
+        <form
+          class="form-box"
+          action="https://formsubmit.co/ceb5803951ff9358ba5019b2b4cd029c"
+          method="POST"
+        >
+          <!-- HONEYPOT (prevents spam) -->
+          <input type="text" name="_honey" style="display: none" />
+
+          <!-- Disable Captcha (optional) -->
+          <input type="hidden" name="_captcha" value="false" />
+
+          <!-- Redirect after submission (optional) -->
+          <input
+            type="hidden"
+            name="_next"
+            value="http://127.0.0.1:5500/thankyou.html        "
+          />
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required />
+            </div>
+          </div>
+
+          <label for="comment">Comment</label>
+          <textarea id="comment" name="comment" rows="4" required></textarea>
+
+          <button
+            type="submit"
+            style="
+              margin-top: 15px;
+              padding: 10px 20px;
+              font-size: 1em;
+              border: none;
+              border-radius: 5px;
+              background-color: #e62b1e;
+              color: white;
+              cursor: pointer;
+            "
+          >
+            Send
+          </button>
+        </form>
+      </div>
+    </div>
+   
+  </body>
+  <script>
+    fetch("footer.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.body.insertAdjacentHTML("beforeend", data);
+        });
+    const links = document.querySelectorAll(".nav-link");
+    const currentPage = location.pathname.split("/").pop();
+
+    links.forEach((link) => {
+      if (link.getAttribute("href") === currentPage) {
+        link.classList.add("active");
+      }
+    });
+    const menuBtn = document.querySelector(".menu-btn");
+    const navLinks = document.querySelector(".nav-links");
+
+    menuBtn.addEventListener("click", function () {
+      if (navLinks.style.display === "flex") {
+        navLinks.style.display = "none";
+      } else {
+        navLinks.style.display = "flex";
+      }
+    });
+
+    // Handle window resize to reset mobile menu state
+    window.addEventListener("resize", function () {
+      if (window.innerWidth > 768) {
+        navLinks.style.display = "flex";
+      } else {
+        navLinks.style.display = "none";
+      }
+    });
+  </script>
+</html>
