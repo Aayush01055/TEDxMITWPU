@@ -147,8 +147,8 @@ header {
     z-index: -1;
 }
 
-/* FOOTER */
-footer {
+/*     */
+    {
     margin: 0px;
     padding: 2px;
     
@@ -165,10 +165,10 @@ footer {
 /* Adjusted Space Between "Meet the Team" and    */
 .team-crew {
     margin-bottom: 80px;
-    /* Slightly more space before the footer */
+    /* Slightly more space before the     */
 }
 
-.footer-container {
+.   -container {
    
     width: 85%;
     margin: 0px;
@@ -177,7 +177,7 @@ footer {
     
 }
 
-.footer-row {
+.   -row {
     display: flex;
     justify-content: space-between;
     align-items: flex-start; /* top-aligned items */
@@ -186,7 +186,7 @@ footer {
 
 
 /* Left Column (Logo & Description) */
-.footer-col {
+.   -col {
     flex: flex;
     min-width: 200px;
     padding: 10px;
@@ -197,7 +197,7 @@ footer {
     text-align: left;
 }
 
-.footer-logo {
+.   -logo {
     width: 150px;
     /* Slightly smaller logo */
     height: auto;
@@ -205,7 +205,7 @@ footer {
     /* Less space below logo */
 }
 
-.footer-desc {
+.   -desc {
     font-size: 13px;
     /* Slightly smaller text */
     color: #bbb;
@@ -220,7 +220,7 @@ footer {
     align-items: center;
 }
 
-.footer-links {
+.   -links {
     list-style: none;
     padding: 0;
     margin: 0;
@@ -230,12 +230,12 @@ footer {
     flex-wrap: nowrap;         /* Prevent wrapping */
 }
 
-.footer-links li {
+.   -links li {
     display: inline-block;
     white-space: nowrap;      
 }
 
-.footer-links a {
+.   -links a {
     color: #fff;
     text-decoration: none;
     font-size: 17px;
@@ -245,7 +245,7 @@ footer {
 }
 
 
-.footer-links a:hover {
+.   -links a:hover {
     color: #f44336;
 }
 .instagram-col {
@@ -290,8 +290,8 @@ footer {
 
 
 
-/* Footer Styles */
-footer {
+/*     Styles */
+    {
     width: 100%;
     background: #1a1a1a;
     color: #fff;
@@ -300,18 +300,18 @@ footer {
     font-size: 16px;
 }
 
-/* Adjusted Space Between "Meet the Team" and Footer */
+/* Adjusted Space Between "Meet the Team" and     */
 .team-crew {
     margin-bottom: 80px;
-    /* Slightly more space before the footer */
+    /* Slightly more space before the     */
 }
 
-.footer-container {
+.   -container {
     width: 85%;
     margin: auto;
 }
 
-.footer-row {
+.   -row {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -319,7 +319,7 @@ footer {
 }
 
 /* Left Column (Logo & Description) */
-.footer-col {
+.   -col {
     flex: 1;
     padding: 5px;
     /* Reduced padding for a thinner look */
@@ -329,7 +329,7 @@ footer {
     text-align: left;
 }
 
-.footer-logo {
+.   -logo {
     width: 150px;
     /* Slightly smaller logo */
     height: auto;
@@ -337,7 +337,7 @@ footer {
     /* Less space below logo */
 }
 
-.footer-desc {
+.   -desc {
     font-size: 13px;
     /* Slightly smaller text */
     color: #bbb;
@@ -353,7 +353,7 @@ footer {
     flex-grow: 1;
 }
 
-.footer-links {
+.   -links {
     list-style: none;
     padding: 0;
     margin: 0;
@@ -362,11 +362,11 @@ footer {
     /* Adjusted spacing */
 }
 
-.footer-links li {
+.   -links li {
     display: inline;
 }
 
-.footer-links a {
+.   -links a {
     color: #fff;
     text-decoration: none;
     font-size: 17px;
@@ -375,7 +375,7 @@ footer {
     transition: color 0.3s ease;
 }
 
-.footer-links a:hover {
+.   -links a:hover {
     color: #f44336;
 }
 
@@ -545,13 +545,13 @@ footer {
         display: block;
     }
     
-    /* Footer responsive */
-    .footer-row {
+    /*     responsive */
+    .   -row {
         flex-direction: column;
         gap: 20px;
     }
     
-    .footer-col {
+    .   -col {
         width: 100%;
         text-align: center;
     }
@@ -560,7 +560,7 @@ footer {
         text-align: center;
     }
     
-    .footer-desc {
+    .   -desc {
         max-width: 100%;
         margin: 0 auto;
     }
@@ -569,7 +569,7 @@ footer {
         order: 3;
     }
     
-    .footer-links {
+    .   -links {
         flex-direction: column;
         gap: 15px;
     }
@@ -683,25 +683,25 @@ footer {
         display: block;
     }
     
-    /* Footer responsive */
-    footer {
+    /*     responsive */
+        {
         width: 87%;
         padding: 15px;
         box-sizing: border-box;
     }
     
-    .footer-container {
+    .   -container {
         width: 100%;
         padding: 0;
         margin: 0;
     }
     
-    .footer-row {
+    .   -row {
         flex-direction: column;
         gap: 20px;
     }
     
-    .footer-col {
+    .   -col {
         width: 100%;
         text-align: center;
         padding: 5px 15px;
@@ -712,7 +712,7 @@ footer {
         text-align: center;
     }
     
-    .footer-desc {
+    .   -desc {
         max-width: 100%;
         margin: 0 auto;
     }
@@ -721,7 +721,7 @@ footer {
         order: 3;
     }
     
-    .footer-links {
+    .   -links {
         flex-direction: column;
         gap: 15px;
     }
@@ -764,7 +764,7 @@ footer {
     padding-right: 32px;
 }
 
-footer {
+    {
     margin: 0px;
     padding: 2px;
     display: flex;
@@ -780,20 +780,20 @@ footer {
     margin-bottom: 80px;
 }
 
-.footer-container {
+.   -container {
     width: 80%;
     margin: 0px;
     padding: 6px;
 }
 
-.footer-row {
+.   -row {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
     flex-wrap: wrap;
 }
 
-.footer-col {
+.   -col {
     flex: flex;
     min-width: 200px;
     padding: 10px;
@@ -804,13 +804,13 @@ footer {
     text-align: left;
 }
 
-.footer-logo {
+.   -logo {
     width: 150px;
     height: auto;
     margin-bottom: 8px;
 }
 
-.footer-desc {
+.   -desc {
     font-size: 13px;
     color: #bbb;
     max-width: 250px;
@@ -823,7 +823,7 @@ footer {
     align-items: center;
 }
 
-.footer-links {
+.   -links {
     list-style: none;
     padding: 0;
     margin: 0;
@@ -834,12 +834,12 @@ footer {
     margin-left: 300px;
 }
 
-.footer-links li {
+.   -links li {
     display: inline-block;
     white-space: nowrap;
 }
 
-.footer-links a {
+.   -links a {
     color: #fff;
     text-decoration: none;
     font-size: 17px;
@@ -848,7 +848,7 @@ footer {
     white-space: nowrap;
 }
 
-.footer-links a:hover {
+.   -links a:hover {
     color: #f44336;
 }
 
@@ -898,7 +898,7 @@ footer {
       left:50px;
     }
     
-    .footer-links {
+    .   -links {
       padding-top: 4px;
       position: relative;
       right:50%;
@@ -910,7 +910,7 @@ footer {
   
     
   
-    .footer-links a {
+    .   -links a {
       /* justify-items: flex-start; */
       font-size: 14px; /* Adjust font size for smaller screens */
     }
@@ -926,8 +926,8 @@ footer {
         flex-direction: column-reverse;
     }
     
-    /* Footer links in single column instead of grid */
-    .footer-links {
+    /*     links in single column instead of grid */
+    .   -links {
         padding-top: 4px;
         position: relative;
         right: 50%;
@@ -937,14 +937,14 @@ footer {
         justify-items: start;
     }
     
-    .footer-links li {
+    .   -links li {
         width: 100%;
         text-align: center;
     }
     
 }
-/* Fix footer width and centering */
-footer {
+/* Fix     width and centering */
+    {
     width: 100%;
     margin: 0;
     padding: 15px 0;
@@ -956,7 +956,7 @@ footer {
     font-size: 16px;
 }
 
-.footer-container {
+.   -container {
     width: 90%;
     max-width: 1200px;
     margin: 0px;
@@ -966,7 +966,7 @@ footer {
     justify-content: space-around;
 }
 
-.footer-row {
+.   -row {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
@@ -974,18 +974,18 @@ footer {
     width: 100%;
 }
 
-/* Fix the footer links margin for better centering */
-.footer-links {
+/* Fix the     links margin for better centering */
+.   -links {
     margin-left: 180px;
     justify-content: center;
 }
 /* Make sure mobile adjustments maintain full width */
 @media screen and (max-width: 768px) {
-    footer {
+        {
         width: 100%;
     }
     
-    .footer-container {
+    .   -container {
         width: 100%;
     }
     
@@ -995,7 +995,7 @@ footer {
         text-align: center;
     }
     
-    .footer-links {
+    .   -links {
         right: 0;
         width: 100%;
         display: flex;
@@ -1300,7 +1300,7 @@ footer {
         position: relative;
         left: 30%;
       }
-      .footer-desc{
+      .   -desc{
         position: relative;
         left: 10px;
       }
@@ -1310,20 +1310,20 @@ footer {
        .about-heading{
         margin-top: 20%;
        }
-       .footer-links{
+       .   -links{
         position: relative;
         margin-left: 0;
         left: 12.5%;
        }
     }
-    .footer-links{
+    .   -links{
         position: relative;
         right: -25%;
         /* margin-right: 50px; */
         margin-right: 90px;
     }
     @media screen and (max-width: 376px) {
-        .footer-links{
+        .   -links{
             margin-right: 55%;
         }
         .instagram-col{

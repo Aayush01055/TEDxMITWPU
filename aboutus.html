@@ -9,21 +9,15 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="aboutus.css" />
+    
+  <script src="https://cdn.tailwindcss.com"></script>
     <style>
-      .footer-links{
-        position: relative;
-        /* right: 20px; */
-    }
     @media screen and (max-width: 768px) {
         .logo-col img{
           position: relative;
           left: 30%;
         }
         
-        .footer-links{
-          position: relative;
-          left: 2%;
-        }
         .instagram-col{
           position: relative;
           left: -10px;
@@ -34,10 +28,7 @@
         }
     }
 
-    @media (min-width:769px) {
-    .footer-logo img{
-        margin-left: -3rem !important;
-    } }
+    @media (min-width:769px) { }
     </style>
   </head>
   <body>
@@ -237,7 +228,7 @@
     
 
     <script>
-      fetch("footer.html")
+      fetch("new_footer.html")
         .then((response) => response.text())
         .then((data) => {
           document.body.insertAdjacentHTML("beforeend", data);

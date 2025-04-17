@@ -7,6 +7,8 @@
   <title>TEDxMITWPU - Our Team</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  
+  <script src="https://cdn.tailwindcss.com"></script>
   <link
     href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Barlow:wght@400;500&display=swap"
     rel="stylesheet" />
@@ -710,7 +712,7 @@
      
       
     }
-    footer {
+       {
         margin: 0px;
         padding: 2px;
         display: flex;
@@ -727,20 +729,20 @@
         margin-bottom: 80px;
       }
 
-      .footer-container {
+      .  -container {
         width: 80%;
         margin: 0px;
         padding: 6px;
       }
 
-      .footer-row {
+      .  -row {
         display: flex;
         justify-content: space-between;
         align-items: flex-start;
         flex-wrap: wrap;
       }
 
-      .footer-col {
+      .  -col {
         flex: flex;
         min-width: 200px;
         padding: 10px;
@@ -751,13 +753,13 @@
         text-align: left;
       }
 
-      .footer-logo {
+      .  -logo {
         width: 150px;
         height: auto;
         margin-bottom: 8px;
       }
 
-      .footer-desc {
+      .  -desc {
         font-size: 13px;
         color: #bbb;
         max-width: 250px;
@@ -770,7 +772,7 @@
         align-items: center;
       }
 
-      .footer-links {
+      .  -links {
         list-style: none;
         padding: 0;
         margin: 0;
@@ -781,12 +783,12 @@
         margin-left: 300px;
       }
 
-      .footer-links li {
+      .  -links li {
         display: inline-block;
         white-space: nowrap;
       }
 
-      .footer-links a {
+      .  -links a {
         color: #fff;
         text-decoration: none;
         font-size: 17px;
@@ -795,7 +797,7 @@
         white-space: nowrap;
       }
 
-      .footer-links a:hover {
+      .  -links a:hover {
         color: #f44336;
       }
 
@@ -839,11 +841,11 @@
         transform: scale(1.1);
       }
       
-      footer{
+        {
         display: flex;
         flex-direction: column;
       }
-      .footer-links{
+      .  -links{
         position: relative;
         right: -45%;
         margin-right: 100px;
@@ -856,7 +858,7 @@
       
       
       
-      .footer-logo img{
+      .  -logo img{
         margin-left: -3rem !important;
       } 
       @media (max-width: 768px) {
@@ -866,7 +868,7 @@
           left: 50px;
         }
 
-        .footer-links {
+        .  -links {
           padding-top: 4px;
           position: relative;
           right: 50%;
@@ -876,7 +878,7 @@
           justify-items: start; /* Align links to the left */
         }
 
-        .footer-links a {
+        .  -links a {
           /* justify-items: flex-start; */
           font-size: 14px; /* Adjust font size for smaller screens */
         }.logo-col {
@@ -910,11 +912,11 @@
         position: relative;
         left: 50px;
       }
-      .footer-links a{
+      .  -links a{
         position: relative;
         right: 220px;
       }
-      .footer-links{
+      .  -links{
         display: flex;
         flex-direction: column;
         left: 150px;
@@ -923,12 +925,12 @@
         position: relative;
         left: 30%;
       }
-      .footer-desc{
+      .  -desc{
         position: relative;
         left: 10%;
       }
       
-      .footer-links{
+      .  -links{
         position: relative;
         /* right: -50%; */
         /* margin-right: 50px; */
@@ -941,7 +943,7 @@
         align-items: center;
         left: 14%;
       }
-      .footer-row{
+      .  -row{
         display: flex;
         flex-direction: column;
         width: 100%;
@@ -984,12 +986,12 @@
 }
 
 /* Remove conflicting widths */
-footer, header, .container {
+  , header, .container {
   width: 100%;
   max-width: 100%;
   margin: 0 auto;
 }
-.footer-container{
+.  -container{
   position: relative;
   left:-2%;
 }
@@ -1001,14 +1003,14 @@ footer, header, .container {
       overflow-x: hidden;
     }
     @media screen and (max-width: 376px) {
-        .footer-links{
+        .  -links{
             margin-right: 5%;
         }
         .logo-col img{
             position: relative;
             left: 25%;
         }
-        .footer-desc{
+        .  -desc{
             position: relative;
             left: 5%;
         }
@@ -1155,10 +1157,10 @@ footer, header, .container {
       </section>
     </main>
 
-    <!-- Footer -->
+    <!--    -->
 
     <script>
-      fetch("footer.html")
+      fetch("new_footer.html")
         .then((response) => response.text())
         .then((data) => {
           document.body.insertAdjacentHTML("beforeend", data);
