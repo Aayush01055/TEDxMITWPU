@@ -1924,6 +1924,9 @@
     .copyright{
       margin-left: 12%;
     }
+    .nav-links.active{
+      height: 450%;
+    }
     
     
   }
@@ -1943,6 +1946,14 @@
   flex-direction: row;
   gap: 5px;
 }
-.nav-links.active{
-  height: 450%;
+
+@media (max-width: 415px) {
+  .nav-links.active{
+   
+    margin-top: 0;
+
+  }
+  .nav-links{
+    height: 450%;
+  }
 }
