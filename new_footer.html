@@ -16,73 +16,79 @@
 <body class="flex flex-col min-h-screen bg-white">
 
   <!-- Footer -->
-  <footer class="bg-black text-red-500 py-8 w-full">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      
+  <footer class="w-full bg-[#121212] text-white py-8">
+    <div class="w-full px-4 sm:px-6 lg:px-8">
+  
       <!-- Main footer section -->
-      <div class="flex flex-col gap-8 lg:flex-row lg:justify-between">
+      <div class="max-w-screen-2xl mx-auto flex flex-col gap-8 lg:flex-row lg:justify-between">
         
         <!-- About -->
-        <div class="basis-1/3 flex flex-col space-y-4">
+        <div class="flex-1 flex flex-col space-y-4">
           <div>
-            <a href="index.html">
-            <img src="https://cdn.jsdelivr.net/gh/Aayush01055/TEDxMITWPU-Assests/images/tedxlogowhite.png" alt="TEDxMITWPU Logo" class="h-12">
-          </a>
+            <img 
+              src="https://cdn.jsdelivr.net/gh/Aayush01055/TEDxMITWPU-Assests/images/tedxlogowhite.png" 
+              alt="TEDxMITWPU Logo" 
+              class="h-12 w-auto object-contain"
+            >
           </div>
           <p class="text-sm sm:text-base">
             TEDxMITWPU brings inspiring ideas to life, fostering meaningful conversations.
           </p>
         </div>
-
+  
         <!-- Quick Links -->
-        <div class="basis-1/3 flex flex-col space-y-4">
+        <div class="flex-1 flex flex-col space-y-4 relative lg:left-[8rem]">
           <h3 class="text-lg sm:text-xl font-semibold">Quick Links</h3>
           <div class="grid grid-cols-2 gap-2 text-sm sm:text-base">
-            <a href="index.html" class="hover:underline">Home</a>
-            <a href="aboutus.html" class="hover:underline">About Us</a>
-            <a href="team.html" class="hover:underline">Team</a>
-            <a href="contact.html" class="hover:underline">Contact</a>
-            <a href="pastevent.html" class="hover:underline">Past Events</a>
-            <a href="guidelines.html" class="hover:underline">Guidelines</a>
-            <a href="brochure.pdf" class="hover:underline">Brochure</a>
-            <a href="https://formbuilder.ccavenue.com/live/ccavenue/mit-university"" class="hover:underline">Book Now</a>
+            <a href="index.html" class="transition-colors duration-300 hover:text-red-500">Home</a>
+            <a href="aboutus.html" class="transition-colors duration-300 hover:text-red-500">About Us</a>
+            <a href="team.html" class="transition-colors duration-300 hover:text-red-500">Team</a>
+            <a href="contact.html" class="transition-colors duration-300 hover:text-red-500">Contact</a>
+            <a href="pastevent.html" class="transition-colors duration-300 hover:text-red-500">Past Editions</a>
+            <a href="guidelines.html" class="transition-colors duration-300 hover:text-red-500">Guidelines</a>
+            <a href="brochure.pdf" class="transition-colors duration-300 hover:text-red-500">Brochure</a>
+            <a href="https://formbuilder.ccavenue.com/live/ccavenue/mit-university" class="transition-colors duration-300 hover:text-red-500">Book Now</a>
           </div>
         </div>
-
+  
         <!-- Follow Us -->
-        <div class="basis-1/3 flex flex-col space-y-4">
+        <div class="flex-1 flex flex-col space-y-4 lg:pl-12 relative lg:left-[14rem]">
           <h3 class="text-lg sm:text-xl font-semibold">Follow Us</h3>
           <ul class="space-y-3 text-sm sm:text-base">
-            <li>
-              <a href="https://www.instagram.com/TedxMITWPU" target="_blank" class="flex items-center space-x-2 hover:underline">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M7.75 2h8.5A5.75 5.75 0 0 1 22 7.75v8.5A5.75 5.75 0 0 1 16.25 22h-8.5A5.75 5.75 0 0 1 2 16.25v-8.5A5.75 5.75 0 0 1 7.75 2zm0 1.5A4.25 4.25 0 0 0 3.5 7.75v8.5A4.25 4.25 0 0 0 7.75 20.5h8.5a4.25 4.25 0 0 0 4.25-4.25v-8.5a4.25 4.25 0 0 0-4.25-4.25h-8.5zm4.25 3.25a5.5 5.5 0 1 1 0 11a5.5 5.5 0 0 1 0-11zm0 1.5a4 4 0 1 0 0 8a4 4 0 0 0 0-8zm5-1a1 1 0 1 1 0 2a1 1 0 0 1 0-2z"/>
-                </svg>
-                <span>Instagram</span>
-              </a>
+            <li class="flex items-center space-x-2">
+              <svg class="h-5 w-5 text-white" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M7.75 2A5.75 5.75 0 002 7.75v8.5A5.75 5.75 0 007.75 22h8.5A5.75 5.75 0 0022 16.25v-8.5A5.75 5.75 0 0016.25 2h-8.5zM4.5 7.75c0-1.79 1.46-3.25 3.25-3.25h8.5c1.79 0 3.25 1.46 3.25 3.25v8.5c0 1.79-1.46 3.25-3.25 3.25h-8.5A3.26 3.26 0 014.5 16.25v-8.5zM12 7a5 5 0 100 10 5 5 0 000-10zm0 1.5a3.5 3.5 0 110 7 3.5 3.5 0 010-7zM17.25 6.25a1 1 0 110 2 1 1 0 010-2z"/>
+              </svg>
+              <a href="#" class="transition-colors duration-300 hover:text-red-500">Instagram</a>
             </li>
-            <li>
-              <a href="https://www.linkedin.com/company/tedxmitwpu" target="_blank" class="flex items-center space-x-2 hover:underline">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M4.98 3.5C3.88 3.5 3 4.38 3 5.48c0 1.1.88 1.98 1.98 1.98c1.1 0 1.98-.88 1.98-1.98c0-1.1-.88-1.98-1.98-1.98zM3.5 8.75h2.96V21H3.5V8.75zM9.5 8.75h2.84v1.7h.04c.4-.75 1.4-1.7 3.05-1.7c3.26 0 3.86 2.15 3.86 4.94V21h-2.95v-5.6c0-1.33-.03-3.04-1.85-3.04c-1.85 0-2.13 1.45-2.13 2.94V21H9.5V8.75z"/>
-                </svg>
-                <span>LinkedIn</span>
-              </a>
+            <li class="flex items-center space-x-2">
+              <svg class="h-5 w-5 text-white" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 
+                2.761 2.239 5 5 5h14c2.761 0 5-2.239 
+                5-5v-14c0-2.761-2.239-5-5-5zm-11 19h-3v-10h3v10zm-1.5-11.268c-.966 
+                0-1.75-.784-1.75-1.75s.784-1.75 
+                1.75-1.75 1.75.784 
+                1.75 1.75-.784 1.75-1.75 
+                1.75zm13.5 11.268h-3v-5.604c0-1.337-.026-3.059-1.865-3.059-1.867 
+                0-2.153 1.459-2.153 
+                2.968v5.695h-3v-10h2.881v1.367h.041c.401-.762 
+                1.379-1.565 
+                2.837-1.565 3.033 
+                0 3.592 1.996 3.592 
+                4.59v5.608z"/>
+              </svg>
+              <a href="#" class="transition-colors duration-300 hover:text-red-500">LinkedIn</a>
             </li>
           </ul>
-          
-          
         </div>
-
+  
       </div>
-
+  
       <!-- Bottom -->
       <div class="mt-8 border-t border-gray-700 pt-4 text-center text-xs sm:text-sm">
-        &copy; 2025 Your Company. All rights reserved.
+        TedXMITWPU© 2025 - All Rights Reserved
       </div>
-
-    </div>
-  </footer>
+    </footer>
 
 </body>
 </html>
